@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h1>heading 1</h1>
+      <h1 id="div1">heading 2</h1>
+      <h1>heading 3</h1>
+      <h1>heading 4</h1>
+    </div>
+
+    <div class="div2">
+      <h1>heading 1</h1>
+      <h1>heading 2</h1>
+      <h1>heading 3</h1>
+      <h1>heading 4</h1>
+    </div>
+
+    <script>
+      let x = document.getElementById("div1");
+      let node = x.nextElementSibling;
+      node.innerHTML = "heeelooo";
+      console.log(node);
+    </script>
+
+    <!-- <script>
+      let x = document.getElementById("div1");
+      let node = x.children;
+
+      for (let i = 0; i < node.length; i++) {
+        node[i].innerHTML = "mohanam asif";
+      }
+      console.log(node);
+      //   let x = document.getElementById("div1");
+      //   x.parentElement.innerHTML = "helo";
+      //   console.log(x);
+    </script> -->
+  </body>
+</html>
