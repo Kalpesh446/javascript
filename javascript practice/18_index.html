@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <ul>
+      <li class="cl pi">list 1</li>
+      <li id="list2">list 2</li>
+      <li class="cl">list 3</li>
+    </ul> -->
+
+    <h1>heading 1</h1>
+    <div id="div1">
+      <p class="intro">p1</p>
+      <h1>heading 2</h1>
+      <p>p2</p>
+      <h1>heading 3</h1>
+      <p class="intro">p3</p>
+    </div>
+    <script>
+      let x = document.querySelectorAll("p.intro");
+
+      for (let i = 0; i < x.length; i++) {
+        x[i].innerHTML = "<p>Helloffffff wolrd</p>";
+      }
+
+      //   let div1 = document.getElementById("div1");
+      //   let x = div1.getElementsByTagName("h1");
+
+      //   for (let i = 0; i < x.length; i++) {
+      //     x[i].innerHTML = "<p>Hello wolrd</p>";
+      //   }
+
+      //   query selector
+    </script>
+  </body>
+</html>
