@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul id="menu">
+      <li>home</li>
+      <li>Product</li>
+      <li>contact</li>
+    </ul>
+    <script>
+      let parent = document.getElementById("menu");
+      let child = parent.firstElementChild.nextElementSibling;
+
+      //   parent.removeChild(child);
+      document.body.removeChild(parent);
+    </script>
+  </body>
+</html>
