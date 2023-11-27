@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const inputNum = prompt("please enter number");
+      let fact = 1;
+
+      if (inputNum < 0) {
+        console.log(`factorial of ${inputNum} is not possible`);
+      } else {
+        for (let i = 1; i <= inputNum; i++) {
+          fact = fact * i;
+        }
+        console.log(`factorial of ${inputNum} is ${fact}`);
+      }
+    </script>
+  </body>
+</html>
