@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>How to find factor in integer</p>
+    <script>
+      let num = prompt("Enter Positive Number");
+      console.log(`factor of ${num}`);
+      // for positive value
+      if (num > 0) {
+        console.log(`Factors of ${num}:`);
+        for (let i = 1; i <= num; i++) {
+          if (num % i === 0) {
+            console.log(i);
+          }
+        }
+      }
+      // nagative value
+      else if (num < 0) {
+        console.log("Factorization is not possible for negative numbers.");
+      } else {
+        console.log("You entered 0, which has no factors.");
+      }
+    </script>
+  </body>
+</html>
