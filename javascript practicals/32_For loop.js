@@ -10,5 +10,5 @@ for (let i = 0; i > 5; i++) {
 
 // what is print in this console.log
 for (let i = 0; i <= 15; i++) {
-  console.log(i++); //0, 2, 4, 6, 8, 10, 12, 14;
+  console.log(i++); // 0, 2, 4, 6, 8, 10, 12, 14;
 }
