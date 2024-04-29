@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let marks = {
+        harry: 98,
+        shubham: 9,
+        lovish: 56,
+        monika: 4,
+      };
+
+      // problem 1
+      for (let i = 0; i < Object.keys(marks).length; i++) {
+        console.log("the marks of " + Object.keys(marks)[i] + " are " + marks[Object.keys(marks)[i]]);
+      }
+
+      // problem 2
+      for (const key in marks) {
+        console.log(key);
+        console.log("the marks of " + key + " are " + marks[key]);
+      }
+
+      // problem 3
+      let i;
+      let cn = 43;
+      while (i != cn) {
+        console.log("try again");
+        i = prompt("Enter a number");
+      }
+      console.log("You have entered a correct number");
+    </script>
+  </body>
+</html>
