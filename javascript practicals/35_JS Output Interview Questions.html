@@ -34,6 +34,16 @@
       console.log(2 + "2"); //output 22
       console.log(2 - "2"); //output 0
       console.log("2" - 2); //output 0
+
+      // question-5 map vs ForEach Difference
+      const arrNum = [1, 2, 3, 4, 5];
+      const mapMethod = arrNum.map((res) => {
+        return res + 3;
+      });
+      const foreachMethod = arrNum.forEach((res, i) => {
+        arrNum[i] = res + 3;
+      });
+      console.log(mapMethod, arrNum);
     </script>
   </body>
 </html>
