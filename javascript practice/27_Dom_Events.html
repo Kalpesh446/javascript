@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 1st way inline event -->
+    <button id="btn" onclick="clickfun1()">click me 1 !</button>
+
+    <!-- 2nd way -->
+    <!-- <button id="btn">click me 2 !</button> -->
+
+    <!-- multiple events in btn events class -->
+    <script>
+      function clickfun1() {
+        console.log("btn is clicked");
+      }
+      function clickfun() {
+        console.log("btn moverover list way 2");
+      }
+      let btn = document.getElementById("btn");
+      btn.addEventListener("mouseover", clickfun);
+
+      btn.addEventListener("mouseout", function () {
+        console.log("ad mouseout annoynemus fun");
+      });
+    </script>
+  </body>
+</html>

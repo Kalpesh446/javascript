@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .style {
+        background-color: yellow;
+        color: red;
+      }
+      .dim {
+        padding: 20px;
+        margin: auto;
+      }
+      /* #btn {
+        background-color: pink;
+        color: blue;
+      } */
+    </style>
+  </head>
+  <body>
+    <div id="box" class="dim">
+      <p>this is p tage</p>
+    </div>
+    <!-- <button id="btn" style="color: white">click here</button> -->
+    <script>
+      let selec = document.getElementById("box");
+      selec.classList.toggle("style");
+      //   let btn = document.getElementById("btn");
+      //   let css = getComputedStyle(btn);
+      //   console.log(css.color);
+      //   btn.style.cssText += "background:red;border:2px solid green";
+    </script>
+  </body>
+</html>

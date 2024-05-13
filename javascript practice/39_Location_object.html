@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn" onclick="myfun()">click here</button>
+    <script>
+      function myfun() {
+        window.location = "https://www.google.com/";
+        location.href = "https://www.google.com/";
+        location.assign("https://www.google.com"); //store in history browser
+        location.replace("https://www.google.com"); // not store in history browser
+        // location.reload(); //reload the page
+      }
+      console.log(location.href);
+      console.log(location.pathname);
+      console.log(location.protocol);
+    </script>
+  </body>
+</html>

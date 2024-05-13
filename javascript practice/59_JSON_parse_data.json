@@ -1,0 +1,12 @@
+{
+  "name": "kalpesh",
+  "age": 27,
+  "is_student": true,
+  "pass_no": null,
+  "p_lang": ["c", "c++", "java", "python"],
+  "address": {
+    "city": "surat",
+    "state": "gujarat",
+    "pincode": 395008
+  }
+}

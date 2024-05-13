@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        padding: 100px;
+        background-color: antiquewhite;
+      }
+      #div {
+        padding: 40px;
+        background-color: cadetblue;
+      }
+      #btn {
+        background-color: chartreuse;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div">
+      <button id="btn">Click here</button>
+      <script>
+        let div = document.getElementById("div");
+        let btn = document.getElementById("btn");
+        div.addEventListener("click", divclick);
+        btn.addEventListener("click", btnclick);
+        document.body.addEventListener("click", bodyclick);
+
+        function divclick() {
+          console.log("div click");
+        }
+
+        function btnclick(event) {
+          console.log("btn click");
+          event.stopPropagation();
+        }
+        function bodyclick() {
+          console.log("body click");
+        }
+      </script>
+    </div>
+  </body>
+</html>
