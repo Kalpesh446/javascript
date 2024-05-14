@@ -1,4 +1,4 @@
-// Closures provide a better, and concise way of writing JavaScript code for the developers and programmers. Closures are created whenever a variable that is defined outside the current scope is accessed within the current scope.
+//Closures provide a better, and concise way of writing JavaScript code for the developers //and programmers. Closures are created whenever a variable that is defined outside the //current scope is accessed within the current scope.
 
 function hello(name) {
   var message = "hello " + name;
