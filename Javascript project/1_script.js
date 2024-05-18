@@ -1,3 +1,4 @@
+// script
 let cel = document.getElementById("cel");
 let fah = document.getElementById("fah");
 
