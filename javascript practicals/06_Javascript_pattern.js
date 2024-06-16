@@ -120,6 +120,17 @@ for (let i = 1; i <= 5; i++) {
   }
   document.writeln("<br>");
 }
+document.write("<br>");
+for (let i = 1; i <= 5; i++) {
+  for (let k = 5; k >= i; k--) {
+    document.write("&nbsp;");
+  }
+  for (let j = 1; j <= i; j++) {
+    document.write("*");
+  }
+
+  document.writeln("<br>");
+}
 
 //     *
 //    * *
